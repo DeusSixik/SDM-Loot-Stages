@@ -12,6 +12,9 @@ public class ChunkHelper {
 
     public static Player getNearestPlayer(LevelAccessor level, Vec3 pos) {
         final List<? extends Player> players = level.players();
+
+        if(players.isEmpty()) return null;
+
         if(players.size() > 1) {
             Player nearestPlayer = null;
             double minDistance = Double.MAX_VALUE;
