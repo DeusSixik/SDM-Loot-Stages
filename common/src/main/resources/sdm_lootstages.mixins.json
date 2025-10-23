@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "dev.behindthescenery.sdm_loot_stages.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "LootContextAccessor",
+    "LootTableMixin",
+    "MinecraftServerMixin",
+    "ReloadableServerResourcesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

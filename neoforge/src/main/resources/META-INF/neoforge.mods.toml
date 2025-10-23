@@ -1,0 +1,45 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "sdm_lootstages"
+version = "${version}"
+displayName = "SDM Loot Stages"
+authors = ""
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.sdm_lootstages]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sdm_lootstages]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.sdm_lootstages]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "SERVER"
+
+[[dependencies.sdm_lootstages]]
+modId = "sdmstages"
+type = "required"
+versionRange = "[0.2.0,)"
+ordering = "AFTER"
+side = "SERVER"
+
+[[mixins]]
+config = "sdm_lootstages.mixins.json"
